@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="xd.css">
+    <title>zadanko</title>
+</head>
+
+<body>
+    <p>Login</p>
+    <input type="text" name="" id="loginUser">
+    <p>Hasło</p>
+    <input type="text" name="" id="hasloUser">
+    <button onclick="addTask()">zaloguj</button>
+    <script>
+        function addTask() {
+            let loginUser = document.getElementById('loginUser').value;
+            window.localStorage.setItem('loginUser', loginUser);
+            let hasloUser = document.getElementById('hasloUser').value;
+            window.localStorage.setItem('hasloUser', hasloUser);
+        }
+    </script>
+</body>
+
+</html>
